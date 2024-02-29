@@ -37,14 +37,14 @@ function Todo(props) {
           </div>
           <div className="todo-div border border-gray-400/50 mt-10 p-3 font-bold text-white bg-inherit  w-[350px] rounded-md h-[48px]">
             <h1 className="flex items-center gap-3">
-              <FaList color="grey" size={18} />
+              <FaList size={18} />
               Your Todos
             </h1>
           </div>
           <div className="mt-3 bg-[#ffff]/70 rounded-md overflow-y-auto text-white w-[350px] min-h-[144px] max-h-min ">
             {!todoList.length ? (
               <h1 className="flex justify-center mt-14">
-                <span className="text-[black]">You do not have any todos</span>
+                <span className="text-[black]">No Task Today</span>
               </h1>
             ) : (
               todoList.map((todo, index) => (
@@ -56,7 +56,7 @@ function Todo(props) {
                           className={`${
                             todoList[index].completed === 'Completed'
                               ? 'text-[#64d064]'
-                              : 'text-inherit'
+                              : 'text-[#9f9f9f]'
                           }`}>
                           <FaRegCircleCheck />
                         </span>
