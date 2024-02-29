@@ -1,5 +1,12 @@
 {
-  "rewrites": [
+  "version": 2,
+  "builds": [
+    {
+      "src": "./server.js",
+      "use": "@vecel/node"
+    }
+  ],
+  "routes": [
     {
       "source": "/(.*)",
       "destination": "/"

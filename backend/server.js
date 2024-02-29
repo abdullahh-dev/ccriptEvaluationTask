@@ -3,9 +3,7 @@ const app = express();
 const PORT = 8080;
 const taskRouter = require('./Router/TaskRouter');
 const mongoose = require('mongoose');
-mongoose.connect(
-  'mongodb+srv://abdullah:abdullah123@cluster0.byqsf7y.mongodb.net/todotaskdb?retryWrites=true&w=majority&appName=Cluster0'
-);
+mongoose.connect('mongodb://localhost:27017/taskCollection');
 const db = mongoose.connection;
 const cors = require('cors');
 db.on('error', (error) => console.log(error));
