@@ -2,11 +2,11 @@
 import Todo from './todo';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { data } from 'autoprefixer';
 
 export default function Home() {
   const [task, setTask] = useState('');
   const [todoList, setTodoList] = useState([]);
+  const BASE_URL = 'http://localhost:8080';
 
   const [visibility, setVisibility] = useState(
     Array(todoList.length).fill(false)
@@ -26,7 +26,7 @@ export default function Home() {
     let completed = 'Not Completed';
     const taskData = { taskName, createdAt, completed };
     axios
-      .post('http://localhost:8080/api/tasks/createTask', taskData)
+      .post(`${BASE_URL}/api/tasks/createTask`, taskData)
       .then((res) => res.data)
       .then((data) => console.log(data.message));
     setTask('');
@@ -36,7 +36,7 @@ export default function Home() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8080/api/tasks/getAllTasks')
+      .get(`${BASE_URL}/api/tasks/getAllTasks`)
       .then((res) => {
         setTodoList(res.data);
       })
@@ -58,7 +58,7 @@ export default function Home() {
       alert("You've already completed the task");
     } else {
       axios
-        .patch(`http://localhost:8080/api/tasks/updateTask/${taskId}`, {
+        .patch(`${BASE_URL}/api/tasks/updateTask/${taskId}`, {
           completed: 'Completed',
         })
         .then((res) => res.data)
@@ -71,7 +71,7 @@ export default function Home() {
   const handleDelete = (index) => {
     const taskId = todoList[index]._id;
     axios
-      .delete(`http://localhost:8080/api/tasks/deleteTask/${taskId}`)
+      .delete(`${BASE_URL}/api/tasks/deleteTask/${taskId}`)
       .then((res) => res.data)
       .then((data) => console.log(data.message))
       .catch((error) => {
