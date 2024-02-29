@@ -44,7 +44,7 @@ function Todo(props) {
           <div className="mt-3 bg-[#ffff]/70 rounded-md overflow-y-auto text-white w-[350px] min-h-[144px] max-h-min ">
             {!todoList.length ? (
               <h1 className="flex justify-center mt-14">
-                <span className="text-[black]">You don't have any todos</span>
+                <span className="text-[black]">You do not have any todos</span>
               </h1>
             ) : (
               todoList.map((todo, index) => (
