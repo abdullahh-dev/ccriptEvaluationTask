@@ -1,0 +1,5 @@
+{
+  "routes": [
+    { "src": "/api/tasks/(.*)", "dest": "http://localhost:8080/api/tasks/$1" }
+  ]
+}
