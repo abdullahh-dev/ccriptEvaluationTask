@@ -2,7 +2,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "https://ccript-evaluation-task-backend.vercel.app/api/tasks/$1"
+      "dest": "https://localhost:8080/api/tasks/$1"
     }
   ]
 }
