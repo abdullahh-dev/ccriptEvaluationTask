@@ -31,7 +31,7 @@ function Todo(props) {
             />
             <button
               onClick={addTask}
-              className="absolute right-2 top-2 rounded-sm text-2xl px-2 bg-[#b19679] text-[#000]">
+              className="absolute hover:bg-[#725e48] transition-all duration-500 right-2 top-2 rounded-sm text-2xl px-2 bg-[#b19679] text-[#000]">
               +
             </button>
           </div>

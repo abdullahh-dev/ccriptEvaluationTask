@@ -1,8 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "https://localhost:8080/api/tasks/$1"
+      "source": "/(.*",
+      "destination": "/"
     }
   ]
 }
