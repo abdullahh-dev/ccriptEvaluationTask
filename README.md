@@ -61,6 +61,7 @@ In the backend, I have created separate folders for the controller, router, and 
 
 ## API EndPoints 
 
--GetAllTasks : **'http://localhost:8080/api/tasks/getAllTasks'**
--UpdateTask : **`http://localhost:8080/api/tasks/updateTask/${taskId}`**
+- CreateTask : **'http://localhost:8080/api/tasks/createTask'**
+- GetAllTasks : **'http://localhost:8080/api/tasks/getAllTasks'**
+- UpdateTask : **`http://localhost:8080/api/tasks/updateTask/${taskId}`**
 - Deleted Task :  **`http://localhost:8080/api/tasks/deleteTask/${taskId}`**
