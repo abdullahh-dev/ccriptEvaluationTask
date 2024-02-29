@@ -1,7 +1,7 @@
 {
   "routes": [
     {
-      "src": "/api/tasks/(.*)",
+      "src": "/(.*)",
       "dest": "https://ccript-evaluation-task-backend.vercel.app/api/tasks/$1"
     }
   ]
