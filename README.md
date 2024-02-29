@@ -50,3 +50,17 @@ In the backend, I have created separate folders for the controller, router, and 
 - In the router folder, there is a file named taskRouter I have specified all the routes that we are hitting on our front end.
 - In the Model folder, I have created a schema that represents the structure of our data to be stored in a database.
 - In the controller folder, all the logic to handle HTTP requests and interact with the Model to perform CRUD operation.
+
+
+## CRUD Operation
+
+**Create**: Added/Inserted new Tasks by clicking the plus button  
+**Read**: Fetching all the tasks to show in UI and this logic to fetch all tasks in written inside page.js file
+**Update**: On Clicking the CheckMark Icon just before taskname we can update the status of the task from Not Completed to Completed
+**Delete**: The Delete button will delete the specific task that has being completed or inserted wrongly.
+
+## API EndPoints 
+
+-GetAllTasks : **'http://localhost:8080/api/tasks/getAllTasks'**
+-UpdateTask : **`http://localhost:8080/api/tasks/updateTask/${taskId}`**
+- Deleted Task :  **`http://localhost:8080/api/tasks/deleteTask/${taskId}`**
