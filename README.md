@@ -1,8 +1,5 @@
 # ccriptEvaluationTask
-
-## Todo Task
-
-### Tech Stacks
+## Tech Stacks
 #### Frontend
 - NextJS
 #### Backend 
