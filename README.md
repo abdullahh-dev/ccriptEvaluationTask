@@ -47,7 +47,6 @@ In the src folder of the front end, there's an app folder that contains the page
 
 In the backend, I have created separate folders for the controller, router, and model to increase the readability of the code. 
 
--In the router folder, there is a file named taskRouter I have specified all the routes that we are hitting on our front end.
--In the Model folder, I have created a schema that represents the structure of our data to be stored in a database.
--In the controller folder, all the logic to handle HTTP requests and interact with the Model to perform CRUD operation.
-
+- In the router folder, there is a file named taskRouter I have specified all the routes that we are hitting on our front end.
+- In the Model folder, I have created a schema that represents the structure of our data to be stored in a database.
+- In the controller folder, all the logic to handle HTTP requests and interact with the Model to perform CRUD operation.
