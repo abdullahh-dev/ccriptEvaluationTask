@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node server",
     "dev": "nodemon server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node server"
   },
   "author": "Abdullah",
   "license": "ISC",
@@ -17,8 +18,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.18.2",
-    "mongoose": "^8.0.4",
-    "webpack": "^5.90.3"
+    "mongoose": "^8.0.4"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
