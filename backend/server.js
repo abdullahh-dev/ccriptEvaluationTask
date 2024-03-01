@@ -1,11 +1,12 @@
 const express = require('express');
 const app = express();
-const PORT = 8090;
 const taskRouter = require('./Router/TaskRouter');
 const mongoose = require('mongoose');
-mongoose.connect(
-  'mongodb+srv://abdullah:abdullah123@cluster0.byqsf7y.mongodb.net/todotaskdb?retryWrites=true&w=majority&appName=Cluster0'
-);
+const dotenv = require('dotenv');
+dotenv.config();
+const PORT = process.env.PORT;
+const DATABASE_URL = process.env.DATABASE_URL;
+mongoose.connect(DATABASE_URL);
 const db = mongoose.connection;
 const cors = require('cors');
 db.on('error', (error) => console.log(error));
