@@ -6,7 +6,7 @@ import axios from 'axios';
 export default function Home() {
   const [task, setTask] = useState('');
   const [todoList, setTodoList] = useState([]);
-  const BASE_URL = 'http://localhost:8080';
+  const BASE_URL = 'http://localhost:8090';
 
   const [visibility, setVisibility] = useState(
     Array(todoList.length).fill(false)
