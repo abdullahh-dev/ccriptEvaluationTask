@@ -6,7 +6,9 @@ import axios from 'axios';
 export default function Home() {
   const [task, setTask] = useState('');
   const [todoList, setTodoList] = useState([]);
-  const BASE_URL = 'http://localhost:8090';
+  const BASE_URL = 'https://ccript-evaluation-task-backend.vercel.app';
+
+  axios.defaults.withCredentials = true;
 
   const [visibility, setVisibility] = useState(
     Array(todoList.length).fill(false)
