@@ -15,7 +15,7 @@ db.once('open', () => console.log('Connected to db'));
 app.use(express.json());
 app.use(
   cors({
-    origin: 'http://localhost:3000/',
+    origin: 'https://ccript-evaluation-task.vercel.app/',
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
     credentials: true,
   })
