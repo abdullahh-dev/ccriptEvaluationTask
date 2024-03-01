@@ -77,8 +77,8 @@ https://ccriptevaluationtask.onrender.com/
 
 **https://ccriptevaluationtask.onrender.com/api/tasks/getAllTasks
 https://ccriptevaluationtask.onrender.com/api/tasks/createTask
-https://ccriptevaluationtask.onrender.com/api/tasks/updateTask
-https://ccriptevaluationtask.onrender.com/api/tasks/deleteTask**
+https://ccriptevaluationtask.onrender.com/api/tasks/updateTask/${taskId}
+https://ccriptevaluationtask.onrender.com/api/tasks/deleteTask/${taskId}**
 
 
 
