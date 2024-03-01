@@ -8,8 +8,6 @@ export default function Home() {
   const [todoList, setTodoList] = useState([]);
   const BASE_URL = 'https://ccriptevaluationtask.onrender.com';
 
-  axios.defaults.withCredentials = true;
-
   const [visibility, setVisibility] = useState(
     Array(todoList.length).fill(false)
   );
