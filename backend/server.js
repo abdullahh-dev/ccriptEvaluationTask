@@ -13,13 +13,7 @@ db.on('error', (error) => console.log(error));
 db.once('open', () => console.log('Connected to db'));
 
 app.use(express.json());
-app.use(
-  cors({
-    origin: 'https://ccript-evaluation-task.vercel.app/',
-    methods: ['GET', 'POST', 'PATCH', 'DELETE'],
-    credentials: true,
-  })
-);
+app.use(cors());
 
 app.use('/api/tasks', taskRouter);
 
