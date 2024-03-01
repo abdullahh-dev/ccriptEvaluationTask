@@ -10,7 +10,7 @@
     "start": "node server",
     "dev": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node server"
+    "build": "npm i"
   },
   "author": "Abdullah",
   "license": "ISC",
