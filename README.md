@@ -59,9 +59,27 @@ In the backend, I have created separate folders for the controller, router, and 
 **Update**: On Clicking the CheckMark Icon just before taskname we can update the status of the task from Not Completed to Completed
 **Delete**: The Delete button will delete the specific task that has being completed or inserted wrongly.
 
-## API EndPoints 
+## API EndPoints for local host environment
 
 - CreateTask : **'http://localhost:8080/api/tasks/createTask'**
 - GetAllTasks : **'http://localhost:8080/api/tasks/getAllTasks'**
 - UpdateTask : **`http://localhost:8080/api/tasks/updateTask/${taskId}`**
 - Deleted Task :  **`http://localhost:8080/api/tasks/deleteTask/${taskId}`**
+
+## Deployment Links
+
+### frontend
+https://ccript-evaluation-task.vercel.app/
+### backend
+https://ccriptevaluationtask.onrender.com/
+
+#### API Enpoint of hosted API
+
+**https://ccriptevaluationtask.onrender.com/api/tasks/getAllTasks
+https://ccriptevaluationtask.onrender.com/api/tasks/createTask
+https://ccriptevaluationtask.onrender.com/api/tasks/updateTask
+https://ccriptevaluationtask.onrender.com/api/tasks/deleteTask**
+
+
+
+
