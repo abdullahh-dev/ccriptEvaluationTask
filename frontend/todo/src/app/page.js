@@ -20,6 +20,7 @@ export default function Home() {
   const addTask = () => {
     if (!task.trim()) {
       alert("Please Enter a Task");
+      setTask('');
       return;
     }
     let taskName = task;
