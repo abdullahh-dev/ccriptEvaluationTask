@@ -18,8 +18,9 @@ export default function Home() {
 
   //Creating a Task
   const addTask = () => {
-    if (task.trim() === '') {
+    if (!task.trim()) {
       alert("Please Enter a Task");
+      return;
     }
     let taskName = task;
     let createdAt = new Date().toLocaleString();
