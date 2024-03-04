@@ -18,7 +18,7 @@ export default function Home() {
 
   //Creating a Task
   const addTask = () => {
-    if (task === '') {
+    if (task === ' ') {
       return false;
     }
     let taskName = task;
